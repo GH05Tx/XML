@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://www.TechnologieXML.org/start"
+  xmlns:st="http://www.TechnologieXML.org/start"
+	xmlns:co="http://www.TechnologieXML.org/common"
+	elementFormDefault="qualified">
+
+    <xsd:element name="Projekcik">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element idref="dop"/>
+                <xsd:element idref="sd"/>
+                <xsd:element idref="Sam"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="dane_o_projekcie" ip="dop">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element id="inf"/>
+                <xsd:element idref="tp"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="info" id="inf">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="autor1"/>
+                <xsd:element ref="autor2"/>
+                <xsd:element ref="tresc"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="autor1" type="xsd:string"/>
+    <xsd:element name="autor2" type="xsd:string"/>
+    <xsd:element name="tresc" type="xsd:string"/>
+
+    <xsd:element name="tytul_projektu" type="xsd:string" ip="tp"/>
+
+    <xsd:element name="spis_danych" key="sd">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="typy_nadwozia"/>
+                <xsd:element ref="rodzaje_paliwa"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="typy_nadwozia">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="typ_nadwozia"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="typ_nadwozia">
+        <xsd:complexType>
+            <xsd:attribute name="typ" maxOccurs="5" minOccurs="1" use="required" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="rodzaje_paliwa">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="3" ref="rodzaj_paliwa"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="rodzaj_paliwa">
+        <xsd:complexType>
+            <xsd:attribute name="rodzaj" use="required" type="xsd:token"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Samochody" key="Sam">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element maxOccurs="unbounded" ref="Samochod"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="Samochod">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="marka"/>
+                <xsd:element ref="model"/>
+                <xsd:element ref="rok_produkcji"/>
+                <xsd:element ref="przebieg"/>
+                <xsd:element ref="nadwozie"/>
+                <xsd:element ref="paliwo"/>
+                <xsd:element ref="data_przegladu"/>
+                <xsd:element ref="pojemnosc_silnika"/>
+                <xsd:element ref="cena"/>
+                <xsd:element ref="dostepnosc"/>
+                <xsd:element ref="znizka"/>
+            </xsd:sequence>
+            <xsd:attribute name="nr" use="required" type="xsd:positiveInteger"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:group name="Car">
+    <xsd:element name="marka" type="xsd:string"/>
+    <xsd:element name="model" type="xsd:string"/>
+    <xsd:element name="rok_produkcji" type="xsd:duration"/>
+    <xsd:element name="przebieg" type="xsd:positiveInteger">
+        <xsd:complexType>
+            <xsd:simpleContent>
+                <xsd:extension base="xsd:integer">
+                    <xsd:attribute name="jed" use="required" type="xsd:NCName" default="km"/>
+                </xsd:extension>
+            </xsd:simpleContent>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="nadwozie">
+        <xsd:complexType>
+            <xsd:attribute name="nad" use="required" type="xsd:NCName"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="paliwo">
+        <xsd:complexType>
+            <xsd:attribute name="pal" use="required" type="xsd:token"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="data_przegladu" type="date"/>
+    <xsd:element name="pojemnosc_silnika">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:decimal">
+                    <xs:attribute name="jed" use="required" type="xs:NCName" fixed="l"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cena">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NMTOKEN">
+                    <xs:attribute name="wal" use="required" type="xs:NCName" default="zł"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <xsd:element name="dostepnosc" type="xsd:"/>
+    <xsd:element name="znizka" use="optional" type="xsd:"/>
+  </xsd:group> 
+</xs:schema>

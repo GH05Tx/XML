@@ -1,0 +1,312 @@
+<?xml version='1.0' encoding="utf-8" ?>
+<!--<?xml-stylesheet type="text/css" href="style.css" ?>-->
+<!DOCTYPE Projekcik SYSTEM "start.dtd">
+
+<Projekcik>
+<dane_o_projekcie>
+	<info>
+		<autor1>Jan Klamka 216797</autor1>
+		<autor2>Maciej Pracucik 216869</autor2>
+		<tresc> Użycie CSS do formatowania XML &amp; definicja DTD</tresc>
+	</info>
+	<tytul_projektu>SALON SAMOCHODOWY</tytul_projektu>
+</dane_o_projekcie>
+
+<spis_danych>
+	<typy_nadwozia>
+		<typ_nadwozia typ="sedan"/>
+		<typ_nadwozia typ="kombi"/>
+		<typ_nadwozia typ="hatchback"/>
+		<typ_nadwozia typ="compact"/>
+		<typ_nadwozia typ="coupe"/>
+	</typy_nadwozia>
+	<rodzaje_paliwa>
+		<rodzaj_paliwa rodzaj="benzyna"/>
+		<rodzaj_paliwa rodzaj="diesel"/>
+		<rodzaj_paliwa rodzaj="lpg"/>
+	</rodzaje_paliwa>
+</spis_danych>
+
+<Samochody>
+	<Samochod nr="1">
+		<marka>Audi</marka>
+		<model>A8</model>
+		<rok_produkcji>2011</rok_produkcji>
+		<przebieg jed="km">40000</przebieg>
+		<nadwozie nad="sedan"/>
+		<paliwo pal="diesel"/>
+		<data_przegladu>2011-10-12</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">100000-120000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> -5000 </znizka>
+	</Samochod>
+
+	<Samochod nr="2">
+		<marka>Fiat</marka>
+		<model>Siena</model>
+		<rok_produkcji>2000</rok_produkcji>
+		<przebieg jed="km">240000</przebieg>
+		<nadwozie nad="sedan"/>
+		<paliwo pal="lpg"/>
+		<data_przegladu>2013-05-09</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
+		<cena wal="zł">6000-8000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -500 </znizka>
+	</Samochod>
+
+	<Samochod nr="3">
+		<marka>Ford</marka>
+		<model>Mustang</model>
+		<rok_produkcji>2015</rok_produkcji>
+		<przebieg jed="m">20000</przebieg>
+		<nadwozie nad="coupe"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>01.01.2017</data_przegladu>
+		<pojemnosc_silnika jed="litr">5.0</pojemnosc_silnika>
+		<cena wal="zł">240000-250000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -10000 </znizka>
+	</Samochod>
+
+	<Samochod nr="4">
+		<marka>Opel</marka>
+		<model>Astra</model>
+		<rok_produkcji>2010</rok_produkcji>
+		<przebieg jed="km">100000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>18.07.2015</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">19000-20000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -2500 </znizka>
+	</Samochod>
+
+	<Samochod nr="5">
+		<marka>Volkswagen</marka>
+		<model>Passat</model>
+		<rok_produkcji>2015</rok_produkcji>
+		<przebieg jed="km">25000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="diesel"/>
+		<data_przegladu>13.06.2018</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">50000-60000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> 0 </znizka>
+	</Samochod>
+
+	<Samochod nr="6">
+		<marka>BMW</marka>
+		<model>E36</model>
+		<rok_produkcji>2005</rok_produkcji>
+		<przebieg jed="km">180000</przebieg>
+		<nadwozie nad="coupe"/>
+		<paliwo pal="diesel"/>
+		<data_przegladu>21.09.2015</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.5</pojemnosc_silnika>
+		<cena wal="zł">10000-20000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -1000 </znizka>
+	</Samochod>
+
+	<Samochod nr="7">
+		<marka>Mercedes</marka>
+		<model>A35 AMG</model>
+		<rok_produkcji>2017</rok_produkcji>
+		<przebieg jed="km">50000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>01.12.2017</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">44000-45000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> -2500 </znizka>
+	</Samochod>
+
+	<Samochod nr="8">
+		<marka>Cheverolet</marka>
+		<model>Camaro</model>
+		<rok_produkcji>2015</rok_produkcji>
+		<przebieg jed="km">21000</przebieg>
+		<nadwozie nad="coupe"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>09.12.2016</data_przegladu>
+		<pojemnosc_silnika jed="litr">5.0</pojemnosc_silnika>
+		<cena wal="zł">150000-200000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -10000 </znizka>
+	</Samochod>
+
+	<Samochod nr="9">
+		<marka>Huandai</marka>
+		<model>i30</model>
+		<rok_produkcji>2017</rok_produkcji>
+		<przebieg jed="km">2000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>01.11.2017</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
+		<cena wal="zł">16000-17000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> 0 </znizka>
+	</Samochod>
+
+	<Samochod nr="10">
+		<marka>Toyota</marka>
+		<model>Corolla</model>
+		<rok_produkcji>2017</rok_produkcji>
+		<przebieg jed="km">25000</przebieg>
+		<nadwozie nad="sedan"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>01.01.2018</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
+		<cena wal="zł">45000-50000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -5000 </znizka>
+	</Samochod>
+
+	<Samochod nr="11">
+		<marka>Toyota</marka>
+		<model>Yaris</model>
+		<rok_produkcji>2010</rok_produkcji>
+		<przebieg jed="km">100000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>21.08.2014</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
+		<cena wal="zł">10000-12000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -750 </znizka>
+	</Samochod>
+
+	<Samochod nr="12">
+		<marka>Ford</marka>
+		<model>Focus</model>
+		<rok_produkcji>2009</rok_produkcji>
+		<przebieg jed="km">21000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>21.09.2014</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
+		<cena wal="zł">13000-15000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -1500 </znizka>
+	</Samochod>
+
+	<Samochod nr="13">
+		<marka>Opel</marka>
+		<model>Insignia</model>
+		<rok_produkcji>2015</rok_produkcji>
+		<przebieg jed="km">65000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="lpg"/>
+		<data_przegladu>09.05.2016</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
+		<cena wal="zł">27000-29000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> -3200 </znizka>
+	</Samochod>
+
+	<Samochod nr="14">
+		<marka>Mazda</marka>
+		<model>6</model>
+		<rok_produkcji>2017</rok_produkcji>
+		<przebieg jed="km">10000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>17.02.2017</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">84000-89000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -12000 </znizka>
+	</Samochod>
+
+	<Samochod nr="15">
+		<marka>Kia</marka>
+		<model>Sportage</model>
+		<rok_produkcji>2016</rok_produkcji>
+		<przebieg jed="km">45000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>23.09.2018</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.7</pojemnosc_silnika>
+		<cena wal="zł">43000-45000</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> -5500 </znizka>
+	</Samochod>
+
+	<Samochod nr="16">
+		<marka>Citroen</marka>
+		<model>C5</model>
+		<rok_produkcji>2000</rok_produkcji>
+		<przebieg jed="km">180000</przebieg>
+		<nadwozie nad="sedan"/>
+		<paliwo pal="benzyna"/>
+		<data_przegladu>09.07.2015</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
+		<cena wal="zł">4000-9000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -1750 </znizka>
+	</Samochod>
+
+	<Samochod nr="17">
+		<marka>Jeep</marka>
+		<model>Cherokee</model>
+		<rok_produkcji>2016</rok_produkcji>
+		<przebieg jed="km">45000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="lpg"/>
+		<data_przegladu>17.08.2016</data_przegladu>
+		<pojemnosc_silnika jed="litr">4.7</pojemnosc_silnika>
+		<cena wal="zł">45000-46000</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -5950 </znizka>
+	</Samochod>
+
+	<Samochod nr="18">
+		<marka>Alfa Romeo</marka>
+		<model>145</model>
+		<rok_produkcji>2000</rok_produkcji>
+		<przebieg jed="km">190000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="diesel"/>
+		<data_przegladu>29.11.2016</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.9</pojemnosc_silnika>
+		<cena wal="zł">2000-2500</cena>
+		<dostepnosc> tak </dostepnosc>
+		<znizka> -250 </znizka>
+	</Samochod>
+
+	<Samochod nr="19">
+		<marka>BMW</marka>
+		<model>e40</model>
+		<rok_produkcji>2010</rok_produkcji>
+		<przebieg jed="km">150000</przebieg>
+		<nadwozie nad="kombi"/>
+		<paliwo pal="lpg"/>
+		<data_przegladu>08.09.2016</data_przegladu>
+		<pojemnosc_silnika jed="litr">2.5</pojemnosc_silnika>
+		<cena wal="zł">13000-13500</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> 0 </znizka>
+	</Samochod>
+
+	<Samochod nr="20">
+		<marka>Renault</marka>
+		<model>Scenic</model>
+		<rok_produkcji>2012</rok_produkcji>
+		<przebieg jed="km">120000</przebieg>
+		<nadwozie nad="hatchback"/>
+		<paliwo pal="diesel"/>
+		<data_przegladu>01.06.2015</data_przegladu>
+		<pojemnosc_silnika jed="litr">1.9</pojemnosc_silnika>
+		<cena wal="zł">8400-8900</cena>
+		<dostepnosc> nie </dostepnosc>
+		<znizka> 0 </znizka>
+	</Samochod>
+
+</Samochody>
+</Projekcik>
