@@ -1,12 +1,16 @@
 <?xml version='1.0' encoding="utf-8" ?>
 <!--<?xml-stylesheet type="text/css" href="style.css" ?>-->
-<!DOCTYPE Projekcik SYSTEM "start.dtd">
+<!--<!DOCTYPE Projekcik SYSTEM "start.dtd">-->
 
-<Projekcik>
+<Projekcik
+		xmlns="własnaprzestrzeń"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="własnaprzestrzeń start_new.xsd ">
+
 <dane_o_projekcie>
 	<info>
-		<autor1>Jan Klamka 216797</autor1>
-		<autor2>Maciej Pracucik 216869</autor2>
+		<autor>Jan Klamka 216797</autor>
+		<autor>Maciej Pracucik 216869</autor>
 		<tresc> Użycie CSS do formatowania XML &amp; definicja DTD</tresc>
 	</info>
 	<tytul_projektu>SALON SAMOCHODOWY</tytul_projektu>
@@ -35,39 +39,39 @@
 		<przebieg jed="km">40000</przebieg>
 		<nadwozie nad="sedan"/>
 		<paliwo pal="diesel"/>
-		<data_przegladu>2011-10-12</data_przegladu>
+		<data_przegladu>12.10.2011</data_przegladu>
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">100000-120000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> -5000 </znizka>
+		<znizka wal="zł"> -5000 </znizka>
 	</Samochod>
 
 	<Samochod nr="2">
 		<marka>Fiat</marka>
 		<model>Siena</model>
 		<rok_produkcji>2000</rok_produkcji>
-		<przebieg jed="km">240000</przebieg>
+		<przebieg jed="km">140000</przebieg>
 		<nadwozie nad="sedan"/>
 		<paliwo pal="lpg"/>
-		<data_przegladu>2013-05-09</data_przegladu>
+		<data_przegladu>09.05.2013</data_przegladu>
 		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
 		<cena wal="zł">6000-8000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -500 </znizka>
+		<znizka wal="zł"> -500 </znizka>
 	</Samochod>
 
 	<Samochod nr="3">
 		<marka>Ford</marka>
 		<model>Mustang</model>
 		<rok_produkcji>2015</rok_produkcji>
-		<przebieg jed="m">20000</przebieg>
+		<przebieg jed="km">20000</przebieg>
 		<nadwozie nad="coupe"/>
 		<paliwo pal="benzyna"/>
 		<data_przegladu>01.01.2017</data_przegladu>
 		<pojemnosc_silnika jed="litr">5.0</pojemnosc_silnika>
 		<cena wal="zł">240000-250000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -10000 </znizka>
+		<znizka wal="zł"> -10000 </znizka>
 	</Samochod>
 
 	<Samochod nr="4">
@@ -81,7 +85,7 @@
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">19000-20000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -2500 </znizka>
+		<znizka wal="zł"> -2500 </znizka>
 	</Samochod>
 
 	<Samochod nr="5">
@@ -95,7 +99,7 @@
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">50000-60000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> 0 </znizka>
+		<znizka wal="zł"> 0 </znizka>
 	</Samochod>
 
 	<Samochod nr="6">
@@ -109,7 +113,7 @@
 		<pojemnosc_silnika jed="litr">2.5</pojemnosc_silnika>
 		<cena wal="zł">10000-20000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -1000 </znizka>
+		<znizka wal="zł"> -1000 </znizka>
 	</Samochod>
 
 	<Samochod nr="7">
@@ -123,7 +127,7 @@
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">44000-45000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> -2500 </znizka>
+		<znizka wal="zł"> -2500 </znizka>
 	</Samochod>
 
 	<Samochod nr="8">
@@ -137,7 +141,7 @@
 		<pojemnosc_silnika jed="litr">5.0</pojemnosc_silnika>
 		<cena wal="zł">150000-200000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -10000 </znizka>
+		<znizka wal="zł"> -10000 </znizka>
 	</Samochod>
 
 	<Samochod nr="9">
@@ -151,7 +155,7 @@
 		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
 		<cena wal="zł">16000-17000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> 0 </znizka>
+		<znizka wal="zł"> 0 </znizka>
 	</Samochod>
 
 	<Samochod nr="10">
@@ -165,7 +169,7 @@
 		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
 		<cena wal="zł">45000-50000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -5000 </znizka>
+		<znizka wal="zł"> -5000 </znizka>
 	</Samochod>
 
 	<Samochod nr="11">
@@ -179,7 +183,7 @@
 		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
 		<cena wal="zł">10000-12000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -750 </znizka>
+		<znizka wal="zł"> -750 </znizka>
 	</Samochod>
 
 	<Samochod nr="12">
@@ -193,7 +197,7 @@
 		<pojemnosc_silnika jed="litr">1.4</pojemnosc_silnika>
 		<cena wal="zł">13000-15000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -1500 </znizka>
+		<znizka wal="zł"> -1500 </znizka>
 	</Samochod>
 
 	<Samochod nr="13">
@@ -207,7 +211,7 @@
 		<pojemnosc_silnika jed="litr">1.6</pojemnosc_silnika>
 		<cena wal="zł">27000-29000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> -3200 </znizka>
+		<znizka wal="zł"> -3200 </znizka>
 	</Samochod>
 
 	<Samochod nr="14">
@@ -221,7 +225,7 @@
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">84000-89000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -12000 </znizka>
+		<znizka wal="zł"> -12000 </znizka>
 	</Samochod>
 
 	<Samochod nr="15">
@@ -235,7 +239,7 @@
 		<pojemnosc_silnika jed="litr">1.7</pojemnosc_silnika>
 		<cena wal="zł">43000-45000</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> -5500 </znizka>
+		<znizka wal="zł"> -5500 </znizka>
 	</Samochod>
 
 	<Samochod nr="16">
@@ -249,7 +253,7 @@
 		<pojemnosc_silnika jed="litr">2.0</pojemnosc_silnika>
 		<cena wal="zł">4000-9000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -1750 </znizka>
+		<znizka wal="zł"> -1750 </znizka>
 	</Samochod>
 
 	<Samochod nr="17">
@@ -263,7 +267,7 @@
 		<pojemnosc_silnika jed="litr">4.7</pojemnosc_silnika>
 		<cena wal="zł">45000-46000</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -5950 </znizka>
+		<znizka wal="zł"> -5950 </znizka>
 	</Samochod>
 
 	<Samochod nr="18">
@@ -277,7 +281,7 @@
 		<pojemnosc_silnika jed="litr">1.9</pojemnosc_silnika>
 		<cena wal="zł">2000-2500</cena>
 		<dostepnosc> tak </dostepnosc>
-		<znizka> -250 </znizka>
+		<znizka wal="zł"> -250 </znizka>
 	</Samochod>
 
 	<Samochod nr="19">
@@ -291,7 +295,7 @@
 		<pojemnosc_silnika jed="litr">2.5</pojemnosc_silnika>
 		<cena wal="zł">13000-13500</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> 0 </znizka>
+		<znizka wal="zł"> 0 </znizka>
 	</Samochod>
 
 	<Samochod nr="20">
@@ -305,7 +309,7 @@
 		<pojemnosc_silnika jed="litr">1.9</pojemnosc_silnika>
 		<cena wal="zł">8400-8900</cena>
 		<dostepnosc> nie </dostepnosc>
-		<znizka> 0 </znizka>
+		<znizka wal="zł"> 0 </znizka>
 	</Samochod>
 
 </Samochody>
