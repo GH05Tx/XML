@@ -34,7 +34,7 @@
     <xsd:complexType name="infoType">
         <xsd:sequence>
             <xsd:element name="autor" type="xsd:string" maxOccurs="2" minOccurs="2"/>
-            <xsd:element name="tresc" type="xsd:string"/>
+            <xsd:element name="tresc" type="xsd:string" />
         </xsd:sequence>
     </xsd:complexType>
                                     <!--DANE O PROJEKCIE - KONIEC-->
@@ -64,7 +64,7 @@
             <xsd:element name="rodzaj_paliwa" type="xxx:rodzajeType" maxOccurs="3"/>
         </xsd:sequence>
     </xsd:complexType>
-
+        <!--simplecontent - element z prostą zawartością i atrybutem-->
     <xsd:complexType name="rodzajeType">
         <xsd:simpleContent>
             <xsd:extension base="xsd:token">
@@ -136,7 +136,7 @@
     <xsd:complexType name="pojemnoscType">
         <xsd:simpleContent>
             <xsd:extension base="xxx:pojemnoscTypRest">
-                <xsd:attribute name="jed" type="xsd:token" use="required" fixed="litr"/>
+                <xsd:attribute name="jed" type="xsd:token" use="required"  fixed="litr"/>
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
@@ -146,10 +146,25 @@
             <xsd:maxInclusive value="5.0"/>
         </xsd:restriction>
     </xsd:simpleType>
-
+<!--
     <xsd:complexType name="cenaType">
         <xsd:simpleContent>
             <xsd:extension base="xsd:token">
+                <xsd:attribute name="wal" type="xsd:token" use="required" default="zł"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+-->
+    <xsd:simpleType name="cenaTypeRest">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:maxInclusive value="999999"/>
+            <xsd:minInclusive value="10"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="cenaType">
+        <xsd:simpleContent>
+            <xsd:extension base="xxx:cenaTypeRest">
                 <xsd:attribute name="wal" type="xsd:token" use="required" fixed="zł"/>
             </xsd:extension>
         </xsd:simpleContent>
@@ -163,16 +178,16 @@
     </xsd:simpleType>
 
     <xsd:simpleType name="znizkaTypeRest">
-        <xsd:restriction base="xsd:integer">
+        <xsd:restriction base="xsd:nonPositiveInteger">
             <xsd:minInclusive value="-50000"/>
-            <xsd:maxInclusive value="0"/>
+            <!--<xsd:maxInclusive value="0"/>-->
         </xsd:restriction>
     </xsd:simpleType>
 
     <xsd:complexType name="znizkaType">
         <xsd:simpleContent>
             <xsd:extension base="xxx:znizkaTypeRest">
-                <xsd:attribute name="wal" type="xsd:token" use="required" fixed="zł"/>
+                <xsd:attribute name="wal" type="xsd:token" use="optional" default="zł"/>
             </xsd:extension>
         </xsd:simpleContent>
     </xsd:complexType>
