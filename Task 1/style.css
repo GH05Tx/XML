@@ -1,0 +1,376 @@
+Projekcik 
+{
+    background-color: #E7DECD;
+    font-family: helvetica;
+    margin-top: 30px;
+}
+
+Samochody 
+{
+    margin-left: auto;;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    width: 80%;
+    display: block;
+    text-align: center;
+}
+
+Samochod 
+{
+    text-align: left;
+    font-size: 18px;
+    padding: 20px;
+	border-radius: 10px;
+	display: inline-block;
+	width: 40%;
+    margin: 5px;
+    background-color: #fffff4;
+}
+
+Samochod:hover 
+{
+    background-color: #828489;
+    box-shadow: 10px 10px 15px;
+}
+
+info 
+{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: 0;
+    margin-right:auto;
+    font-size: 20px;
+    background-color: #C5C5C5;
+    padding: 20px;
+    width:83%;  
+}
+
+autor1, autor2, tresc
+{
+    display: block;
+    position: relative; 
+    left: 90px; 
+    !text-align: left;   
+}
+
+tytul_projektu 
+{
+    text-align: left; 
+    margin-left: 15%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+dane_o_projekcie 
+{
+    font-weight: bolder: ;
+    font-size: 24px;
+}
+
+autor1::before 
+{
+    content:"Autorzy:";
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+
+tresc::before 
+{
+    content:"Zadanie:";
+    font-weight: bold;
+	display: block;
+    font-size: 20px;
+}
+
+nadwozie[nad="kombi"]::after
+{
+	content:"kombi";
+}
+nadwozie[nad="sedan"]::after
+{
+	content:"sedan";
+}
+nadwozie[nad="hatchback"]::after
+{
+	content:"hatchback";
+}
+nadwozie[nad="compact"]::after
+{
+	content:"compact";
+}
+nadwozie[nad="coupe"]::after
+{
+	content:"coupe";
+}
+
+
+paliwo[pal="benzyna"]::after 
+{
+    content:"benzyna";
+}
+paliwo[pal="diesel"]::after
+{
+	content:"diesel";
+}
+paliwo[pal="lpg"]::after
+{
+	content:"lpg";
+}
+
+marka::before 
+{
+    content: "Marka: ";
+    font-weight: bold;
+}
+model::before 
+{
+    content: "Model: " ;
+    font-weight: bold;
+}
+rok_produkcji::before 
+{
+    content: "Rok produkcji: " ;
+    font-weight: bold;
+}
+przebieg::before 
+{
+    content: "Przebieg: " ;
+    font-weight: bold;
+}
+przebieg::after
+{
+    content: " km" ;
+
+}
+
+nadwozie::before 
+{
+    content: "Nadwozie: ";
+    font-weight: bold;
+}
+
+paliwo::before 
+{
+    content: "Paliwo: ";
+    font-weight: bold;
+}
+                        
+data_przegladu::before 
+{
+    content: "Data przeglądu: ";
+    font-weight: bold;
+}
+                            
+pojemnosc_silnika::before 
+{
+    content: "Pojemność silnika: ";
+    font-weight: bold;
+}
+
+pojemnosc_silnika::after 
+{
+    content: " l";
+}
+        
+cena::before 
+{
+    content: "Cena: ";
+    font-weight: bold;
+}
+                
+cena::after 
+{
+    content: " zł";
+}
+
+cena 
+{
+    display: block; 
+    position: relative; 
+    left:50%;
+}
+
+marka
+{
+    display: block;
+    position: relative; 
+    left:50%;
+}
+model 
+{
+    display: block;
+    position: relative; 
+    left:50%;
+}
+
+rok_produkcji 
+{
+    display: block;
+    position: relative; 
+    left:50%;
+}
+
+przebieg 
+{
+    display: block;
+    position: relative; 
+    left:50%;
+}   
+
+nadwozie
+{
+    display: block;
+    position: relative; 
+    left:50%;
+} 
+                       
+paliwo  
+{
+    display: block;
+    position: relative; 
+    left:50%;
+} 
+                            
+data_przegladu 
+{
+    display: block;
+    position: relative; 
+    left:50%;
+} 
+
+pojemnosc_silnika  
+{
+    display: block;
+    position: relative; 
+    left:50%;
+} 
+                                   
+Samochod[nr="1"]
+{
+    background-image: url(pics/1.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="2"]
+{
+    background-image: url(pics/2.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="3"], Samochod[nr="12"]
+{
+    background-image: url(pics/3.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="4"], Samochod[nr="13"]
+{
+    background-image: url(pics/4.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="5"]
+{
+    background-image: url(pics/5.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="6"],  Samochod[nr="19"]
+{
+    background-image: url(pics/6.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="7"]
+{
+    background-image: url(pics/7.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="8"]
+{
+    background-image: url(pics/8.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="9"]
+{
+    background-image: url(pics/9.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+Samochod[nr="14"]
+{
+    background-image: url(pics/14.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="10"], Samochod[nr="11"]
+{
+    background-image: url(pics/10.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="15"]
+{
+    background-image: url(pics/15.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+                            
+Samochod[nr="16"]
+{
+    background-image: url(pics/16.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="17"]
+{
+    background-image: url(pics/17.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="18"]
+{
+    background-image: url(pics/18.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}
+
+Samochod[nr="20"]
+{
+    background-image: url(pics/20.jpg);
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    text-align: left;   
+}

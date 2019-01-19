@@ -1,0 +1,34 @@
+
+		<!ELEMENT Projekcik (dane_o_projekcie,spis_danych,Samochody)+>
+		<!ELEMENT dane_o_projekcie (info,tytul_projektu)+>
+		<!ELEMENT info (autor1,autor2,tresc)+>
+		<!ELEMENT autor1 (#PCDATA)>
+		<!ELEMENT autor2 (#PCDATA)>
+		<!ELEMENT tresc (#PCDATA)>
+		<!ELEMENT tytul_projektu (#PCDATA)>
+		<!ELEMENT spis_danych (typy_nadwozia,rodzaje_paliwa)+>
+		<!ELEMENT typy_nadwozia (typ_nadwozia)+>
+		<!ELEMENT typ_nadwozia (#PCDATA)>
+		<!ATTLIST typ_nadwozia typ ID #REQUIRED>
+		<!ELEMENT rodzaje_paliwa (rodzaj_paliwa)+>
+		<!ELEMENT rodzaj_paliwa (#PCDATA)>
+		<!ATTLIST rodzaj_paliwa rodzaj ID #REQUIRED>
+		<!ELEMENT Samochody (Samochod)+>
+		<!ELEMENT Samochod (marka,model,rok_produkcji,przebieg,nadwozie,paliwo,data_przegladu,pojemnosc_silnika,cena)+>
+		<!ATTLIST Samochod nr CDATA #REQUIRED>
+		<!ELEMENT marka (#PCDATA)>
+		<!ELEMENT model (#PCDATA)>
+		<!ELEMENT rok_produkcji (#PCDATA)>
+		<!ELEMENT przebieg (#PCDATA)>
+		<!ELEMENT nadwozie (#PCDATA)>
+		<!ATTLIST nadwozie nad IDREF #REQUIRED>
+		<!ELEMENT paliwo (#PCDATA)>
+		<!ATTLIST paliwo pal IDREF #REQUIRED>
+		<!ATTLIST przebieg jed CDATA #FIXED "km">
+		<!ELEMENT data_przegladu (#PCDATA)>
+		<!ELEMENT pojemnosc_silnika (#PCDATA)>
+		<!ATTLIST pojemnosc_silnika jed CDATA #FIXED "litr">
+		<!ELEMENT cena (#PCDATA)>
+		<!ATTLIST cena wal CDATA #FIXED "zł">
+
+

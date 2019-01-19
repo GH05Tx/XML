@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Raport>
+   <Samochod Marka="Audi" Model="A8" Rok_Produkcji="2011" Przebieg="40000 km"
+             Nadwozie="sedan"
+             Paliwo="diesel"
+             Data_przegladu="12.10.2011"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" nie "
+             Cena="120000 zł"
+             Znizka=" -5000 zł"/>
+   <Samochod Marka="Fiat" Model="Siena" Rok_Produkcji="2000" Przebieg="140000 km"
+             Nadwozie="sedan"
+             Paliwo="lpg"
+             Data_przegladu="09.05.2013"
+             Pojemnosc_silnika="1.4 litr"
+             Dostepnosc=" tak "
+             Cena="8000 zł"
+             Znizka=" -500 zł"/>
+   <Samochod Marka="Ford" Model="Mustang" Rok_Produkcji="2015" Przebieg="20000 km"
+             Nadwozie="coupe"
+             Paliwo="benzyna"
+             Data_przegladu="01.01.2017"
+             Pojemnosc_silnika="5.0 litr"
+             Dostepnosc=" tak "
+             Cena="250000 zł"
+             Znizka=" -10000 zł"/>
+   <Samochod Marka="Opel" Model="Astra" Rok_Produkcji="2010" Przebieg="100000 km"
+             Nadwozie="hatchback"
+             Paliwo="benzyna"
+             Data_przegladu="18.07.2015"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" tak "
+             Cena="20000 zł"
+             Znizka=" -2500 zł"/>
+   <Samochod Marka="Volkswagen" Model="Passat" Rok_Produkcji="2015" Przebieg="25000 km"
+             Nadwozie="kombi"
+             Paliwo="diesel"
+             Data_przegladu="13.06.2018"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" nie "
+             Cena="60000 zł"
+             Znizka=" 0 zł"/>
+   <Samochod Marka="BMW" Model="E36" Rok_Produkcji="2005" Przebieg="180000 km"
+             Nadwozie="coupe"
+             Paliwo="diesel"
+             Data_przegladu="21.09.2015"
+             Pojemnosc_silnika="2.5 litr"
+             Dostepnosc=" tak "
+             Cena="20000 zł"
+             Znizka=" -1000 zł"/>
+   <Samochod Marka="Mercedes" Model="A35 AMG" Rok_Produkcji="2017" Przebieg="50000 km"
+             Nadwozie="hatchback"
+             Paliwo="benzyna"
+             Data_przegladu="01.12.2017"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" nie "
+             Cena="45000 zł"
+             Znizka=" -2500 zł"/>
+   <Samochod Marka="Cheverolet" Model="Camaro" Rok_Produkcji="2015" Przebieg="21000 km"
+             Nadwozie="coupe"
+             Paliwo="benzyna"
+             Data_przegladu="09.12.2016"
+             Pojemnosc_silnika="5.0 litr"
+             Dostepnosc=" tak "
+             Cena="200000 zł"
+             Znizka=" -10000 zł"/>
+   <Samochod Marka="Huandai" Model="i30" Rok_Produkcji="2017" Przebieg="2000 km"
+             Nadwozie="kombi"
+             Paliwo="benzyna"
+             Data_przegladu="01.11.2017"
+             Pojemnosc_silnika="1.6 litr"
+             Dostepnosc=" nie "
+             Cena="17000 zł"
+             Znizka=" 0 zł"/>
+   <Samochod Marka="Toyota" Model="Corolla" Rok_Produkcji="2017" Przebieg="25000 km"
+             Nadwozie="sedan"
+             Paliwo="benzyna"
+             Data_przegladu="01.01.2018"
+             Pojemnosc_silnika="1.6 litr"
+             Dostepnosc=" tak "
+             Cena="50000 zł"
+             Znizka=" -5000 zł"/>
+   <Samochod Marka="Toyota" Model="Yaris" Rok_Produkcji="2010" Przebieg="100000 km"
+             Nadwozie="hatchback"
+             Paliwo="benzyna"
+             Data_przegladu="21.08.2014"
+             Pojemnosc_silnika="1.4 litr"
+             Dostepnosc=" tak "
+             Cena="12000 zł"
+             Znizka=" -750 zł"/>
+   <Samochod Marka="Ford" Model="Focus" Rok_Produkcji="2009" Przebieg="21000 km"
+             Nadwozie="hatchback"
+             Paliwo="benzyna"
+             Data_przegladu="21.09.2014"
+             Pojemnosc_silnika="1.4 litr"
+             Dostepnosc=" tak "
+             Cena="15000 zł"
+             Znizka=" -1500 zł"/>
+   <Samochod Marka="Opel" Model="Insignia" Rok_Produkcji="2015" Przebieg="65000 km"
+             Nadwozie="kombi"
+             Paliwo="lpg"
+             Data_przegladu="09.05.2016"
+             Pojemnosc_silnika="1.6 litr"
+             Dostepnosc=" nie "
+             Cena="29000 zł"
+             Znizka=" -3200 zł"/>
+   <Samochod Marka="Mazda" Model="6" Rok_Produkcji="2017" Przebieg="10000 km"
+             Nadwozie="kombi"
+             Paliwo="benzyna"
+             Data_przegladu="17.02.2017"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" tak "
+             Cena="89000 zł"
+             Znizka=" -12000 zł"/>
+   <Samochod Marka="Kia" Model="Sportage" Rok_Produkcji="2016" Przebieg="45000 km"
+             Nadwozie="kombi"
+             Paliwo="benzyna"
+             Data_przegladu="23.09.2018"
+             Pojemnosc_silnika="1.7 litr"
+             Dostepnosc=" nie "
+             Cena="45000 zł"
+             Znizka=" -5500 zł"/>
+   <Samochod Marka="Citroen" Model="C5" Rok_Produkcji="2000" Przebieg="180000 km"
+             Nadwozie="sedan"
+             Paliwo="benzyna"
+             Data_przegladu="09.07.2015"
+             Pojemnosc_silnika="2.0 litr"
+             Dostepnosc=" tak "
+             Cena="9000 zł"
+             Znizka=" -1750 zł"/>
+   <Samochod Marka="Jeep" Model="Cherokee" Rok_Produkcji="2016" Przebieg="45000 km"
+             Nadwozie="kombi"
+             Paliwo="lpg"
+             Data_przegladu="17.08.2016"
+             Pojemnosc_silnika="4.7 litr"
+             Dostepnosc=" tak "
+             Cena="46000 zł"
+             Znizka=" -5950 zł"/>
+   <Samochod Marka="Alfa Romeo" Model="145" Rok_Produkcji="2000" Przebieg="190000 km"
+             Nadwozie="hatchback"
+             Paliwo="diesel"
+             Data_przegladu="29.11.2016"
+             Pojemnosc_silnika="1.9 litr"
+             Dostepnosc=" tak "
+             Cena="2500 zł"
+             Znizka=" -250 zł"/>
+   <Samochod Marka="BMW" Model="e40" Rok_Produkcji="2010" Przebieg="150000 km"
+             Nadwozie="kombi"
+             Paliwo="lpg"
+             Data_przegladu="08.09.2016"
+             Pojemnosc_silnika="2.5 litr"
+             Dostepnosc=" nie "
+             Cena="13500 zł"
+             Znizka=" 0 zł"/>
+   <Samochod Marka="Renault" Model="Scenic" Rok_Produkcji="2012" Przebieg="120000 km"
+             Nadwozie="hatchback"
+             Paliwo="diesel"
+             Data_przegladu="01.06.2015"
+             Pojemnosc_silnika="1.9 litr"
+             Dostepnosc=" nie "
+             Cena="8900 zł"
+             Znizka=" 0 zł"/>
+   <Podsumowanie>
+      <liczbaSamochodow>20</liczbaSamochodow>
+      <liczbaAutSedan>4</liczbaAutSedan>
+      <liczbaAutKombi>7</liczbaAutKombi>
+      <liczbaAutHatchback>6</liczbaAutHatchback>
+      <liczbaAutCompact>0</liczbaAutCompact>
+      <liczbaAutCoupe>3</liczbaAutCoupe>
+      <liczbaAutLPG>4</liczbaAutLPG>
+      <liczbaAutDiesel>5</liczbaAutDiesel>
+      <liczbaAutBenzyna>11</liczbaAutBenzyna>
+      <sredniaCena>52995</sredniaCena>
+      <sredniaZnizka>-3370</sredniaZnizka>
+      <dataWygenerowaniaRaportu>03-12-2018</dataWygenerowaniaRaportu>
+   </Podsumowanie>
+</Raport>
